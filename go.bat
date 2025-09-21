@@ -1,5 +1,5 @@
 @echo off
-echo === LutecIA Build Script v1.3 (With Checks) ===
+echo === LutecIA Build Script v4.0 (With Checks) ===
 
 echo Checking for .NET SDK...
 dotnet --version >nul 2>&1

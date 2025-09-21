@@ -39,6 +39,6 @@
     <Compile Include="ConversationMessage.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="SegoeUIVariable.ttf" />
+    <None Include="SegoeUIVariable.txt" />
   </ItemGroup>
 </Project>

@@ -1,8 +1,9 @@
 <Page x:Class="LutecIA.HistoryPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls">
     <Grid Padding="12">
-        <InfoBar Title="Historique" Message="Liste des conversations précédentes" IsOpen="True"/>
+        <muxc:InfoBar Title="Historique" Message="Liste des conversations précédentes" IsOpen="True"/>
         <ListView Margin="0,48,0,0">
             <ListViewItem Content="Conversation : 2025-09-01"/>
         </ListView>
