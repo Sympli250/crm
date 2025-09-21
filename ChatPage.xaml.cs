@@ -1,6 +1,6 @@
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using LutecIA.ViewModels;
+using LutecIA;
 
 namespace LutecIA;
 public sealed partial class ChatPage : Page

@@ -19,7 +19,7 @@ public partial class MainWindow : Window
         SetTitleBar();
 
         // Navigate to default page
-        ContentFrame.Navigate(typeof(Views.ChatPage));
+        ContentFrame.Navigate(typeof(ChatPage));
     }
 
     void SetTitleBar()
@@ -37,7 +37,7 @@ public partial class MainWindow : Window
     {
         if (args.IsSettingsSelected)
         {
-            ContentFrame.Navigate(typeof(Views.SettingsPage));
+            ContentFrame.Navigate(typeof(SettingsPage));
             return;
         }
 
@@ -46,19 +46,19 @@ public partial class MainWindow : Window
             switch (tag)
             {
                 case "chat":
-                    ContentFrame.Navigate(typeof(Views.ChatPage));
+                    ContentFrame.Navigate(typeof(ChatPage));
                     break;
                 case "documents":
-                    ContentFrame.Navigate(typeof(Views.DocumentsPage));
+                    ContentFrame.Navigate(typeof(DocumentsPage));
                     break;
                 case "history":
-                    ContentFrame.Navigate(typeof(Views.HistoryPage));
+                    ContentFrame.Navigate(typeof(HistoryPage));
                     break;
                 case "users":
-                    ContentFrame.Navigate(typeof(Views.UsersPage));
+                    ContentFrame.Navigate(typeof(UsersPage));
                     break;
                 case "settings":
-                    ContentFrame.Navigate(typeof(Views.SettingsPage));
+                    ContentFrame.Navigate(typeof(SettingsPage));
                     break;
             }
         }
