@@ -1,0 +1,32 @@
+<Page
+    x:Class="LutecIA.ChatPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:LutecIA"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Padding="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ListView x:Name="MessagesList" ItemsSource="{Binding Messages}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="6">
+                        <TextBlock Text="{Binding Sender}" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Text}" TextWrapping="WrapWholeWords"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="8" Margin="0,12,0,0">
+            <TextBox x:Name="InputBox" PlaceholderText="Écrire un message..." HorizontalAlignment="Stretch" Width="900"/>
+            <Button Content="Envoyer" Click="SendButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

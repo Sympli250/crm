@@ -1,0 +1,15 @@
+<Page x:Class="LutecIA.DocumentsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Padding="12">
+        <CommandBar>
+            <AppBarButton Icon="Add" Label="Ajouter"/>
+            <AppBarButton Icon="Delete" Label="Supprimer"/>
+        </CommandBar>
+
+        <ListView Margin="0,48,0,0">
+            <ListViewItem Content="Document 1"/>
+            <ListViewItem Content="Document 2"/>
+        </ListView>
+    </Grid>
+</Page>

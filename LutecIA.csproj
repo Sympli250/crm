@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
+    <OutputType>WinExe</OutputType>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWinUI>true</UseWinUI>
+    <AssemblyName>LutecIA</AssemblyName>
+    <RootNamespace>LutecIA</RootNamespace>
+    <RuntimeIdentifiers>win-x64;win-arm64;win-x86</RuntimeIdentifiers>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultPageItems>false</EnableDefaultPageItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.250907003" />
+    <PackageReference Include="Microsoft.WindowsAppSDK.WinUI" Version="1.8.250906003" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+    <Compile Include="App.xaml.cs" />
+    <Page Include="MainWindow.xaml" />
+    <Compile Include="MainWindow.xaml.cs" />
+    <Compile Include="ChatPage.xaml.cs" />
+    <Page Include="ChatPage.xaml" />
+    <Compile Include="DocumentsPage.xaml.cs" />
+    <Page Include="DocumentsPage.xaml" />
+    <Compile Include="HistoryPage.xaml.cs" />
+    <Page Include="HistoryPage.xaml" />
+    <Compile Include="UsersPage.xaml.cs" />
+    <Page Include="UsersPage.xaml" />
+    <Compile Include="SettingsPage.xaml.cs" />
+    <Page Include="SettingsPage.xaml" />
+    <Compile Include="MainViewModel.cs" />
+    <Compile Include="ChatViewModel.cs" />
+    <Compile Include="SettingsViewModel.cs" />
+    <Compile Include="LLMService.cs" />
+    <Compile Include="ConversationMessage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SegoeUIVariable.ttf" />
+  </ItemGroup>
+</Project>
