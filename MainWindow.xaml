@@ -9,7 +9,7 @@
     Title="LutecIA - Symplissime"
     Width="1200" Height="800">
     <Grid>
-        <NavigationView x:Name="NavView" PaneDisplayMode="Left" IsBackEnabled="False" SelectionChanged="NavView_SelectionChanged">
+        <NavigationView x:Name="NavView" PaneDisplayMode="Left" IsBackEnabled="False" IsSettingsVisible="True" SelectionChanged="NavView_SelectionChanged">
             <NavigationView.MenuItems>
                 <NavigationViewItem Content="Accueil" Tag="chat">
                     <NavigationViewItem.Icon>
@@ -32,14 +32,6 @@
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
             </NavigationView.MenuItems>
-            <NavigationView.SettingsItem>
-                <NavigationViewItem Content="Paramètres" Tag="settings">
-                    <NavigationViewItem.Icon>
-                        <SymbolIcon Symbol="Setting" />
-                    </NavigationViewItem.Icon>
-                </NavigationViewItem>
-            </NavigationView.SettingsItem>
-
             <Frame x:Name="ContentFrame"/>
         </NavigationView>
     </Grid>
