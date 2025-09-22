@@ -12,6 +12,13 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         this.InitializeComponent();
+
+        if (NavView.SettingsItem is NavigationViewItem settingsItem)
+        {
+            settingsItem.Content = "Paramètres";
+            settingsItem.Icon = new SymbolIcon(Symbol.Setting);
+        }
+
         this.DataContext = ViewModel;
 
         // Apply simple title bar integration for a modern look
@@ -56,9 +63,6 @@ public partial class MainWindow : Window
                     break;
                 case "users":
                     ContentFrame.Navigate(typeof(UsersPage));
-                    break;
-                case "settings":
-                    ContentFrame.Navigate(typeof(SettingsPage));
                     break;
             }
         }
